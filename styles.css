@@ -1,0 +1,295 @@
+/**- Very dark cyan: hsl(183, 100%, 15%)
+$Dark grayish cyan: hsl(186, 14%, 43%)
+$Grayish cyan: hsl(184, 14%, 56%)
+$Light grayish cyan: hsl(185, 41%, 84%)
+$Very light grayish cyan: hsl(189, 41%, 97%)
+$White: hsl(0, 0%, 100%)
+**/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+    height: 100vh;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    height: 90vh;
+    width: 70%;
+    margin: 50px auto;
+    background-color: hsl(185, 41%, 84%);
+    border-radius: 10px;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+section{
+    width:75%;
+    height: 55vh;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  hsl(0, 0%, 100%);
+}   
+
+.input{   
+    margin-left: 15px;
+    width: 45%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    color: hsl(184, 14%, 56%);
+    font-family: 'Space Mono', monospace;
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+
+.items .amount, 
+.item-people .people{
+    padding: .5rem;
+    width: 89%;
+    border: 1px solid hsl(172, 67%, 45%);
+    border-radius: 4px;
+}
+
+
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: .7rem;
+    flex-wrap: wrap;
+}
+
+
+
+.percent button{ 
+    width: 42%;
+    text-align: center;
+    padding: .8rem;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    font-size:1rem;
+    font-family: 'Space Mono', monospace;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#custom{
+    width: 40%;
+    border: 1px solid hsl(172, 67%, 45%);
+    background-color:  hsl(189, 41%, 97%);
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+    font-family: 'Space Mono', monospace;
+}
+
+
+/*
+Very dark cyan: hsl(183, 100%, 15%)
+$Dark grayish cyan: hsl(186, 14%, 43%)
+$Grayish cyan: hsl(184, 14%, 56%)
+$Light grayish cyan: hsl(185, 41%, 84%)
+$Very light grayish cyan: hsl(189, 41%, 97%)
+*/
+.percent button:hover{
+    background-color:   hsl(172, 54%, 61%);
+    color: black;
+    transition: .4s all ease;
+}
+
+.active{
+    background-color: hsl(172, 67%, 45%) !important;
+    color: black;
+}
+
+.output{
+    width: 45%;
+    height: 45vh;
+    border-radius: 10px;
+    margin-right: 25px;
+    background-color: hsl(183, 100%, 15%);
+    font-family: 'Space Mono', monospace;
+}
+
+.item-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+section-2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+section-2, .total p{
+    font-size: .8rem;
+    color: white;
+    font-family: 'Space Mono', monospace;
+}
+
+.person{
+    font-size: .75rem ;
+    color:  hsl(184, 14%, 56%)!important;
+}
+
+span{
+    color: hsl(172, 67%, 45%);
+    font-size: 1.8rem;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700px;
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.reset{
+    display: flex;
+    justify-content: center;
+    gap: 0rem;
+}
+.reset button{
+    font-weight: 700;
+    font-size: 1em;
+    padding: .7rem;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    margin-top: 4rem;
+    cursor: pointer;
+    background-color: hsl(172, 67%, 45%);
+}
+@media all and (max-width: 1440px){
+    .input{
+        display: flex;
+        justify-content: center;
+        height: 85%;
+        gap: 0rem;
+    }
+
+    .reset button{
+        margin-top: 3rem;
+    }
+}
+@media all and (max-width: 900px){
+    .input{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0rem;
+    }
+    .item-wrapper{
+        height: 100%;
+        width: 100%;
+    }
+    span{
+        font-size: 1.3rem;
+    }
+
+    .reset button{
+        margin-top: 1rem;
+    }
+
+}
+
+@media all and (max-width: 1000px ) {
+
+   section{
+       width: 90%;
+   }
+   .items, input{
+     width: 100%;
+   }
+   .items, input, .item-people{
+    width: 100%;
+  }
+   .input{
+       width: 50%;
+       margin-left: 0;
+   }
+   .percent button{
+       width: 45%;
+   }
+   #custom{
+       width: 45%;
+   }
+}
+
+@media all and (max-width: 602px ){
+  section{
+      width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .items, input, .item-people{
+    width: 95%;
+  }
+  .item-people .people,
+  .items .amount{
+      width: 100%;
+  }
+  .input{
+      width: 85%;
+      display: flex;
+      justify-content: center;
+  }
+
+  .percent button{
+    width: 46%;
+    font-size: .89rem;
+  }
+    #custom{
+    width: 46%;
+    }
+
+  .output{
+      width: 80%;
+      height: 100%;
+      margin: 0 0;
+  }
+  .reset button{
+      width: 50%;
+      font-size: 1rem;
+      padding: .5rem;
+      margin-top: .8rem;
+  }
+  section-2{
+    margin-top: 3rem;
+  }
+  section-2, .total p{
+      font-size: 1rem;
+  }
+
+}
+
