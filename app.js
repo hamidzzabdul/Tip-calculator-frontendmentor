@@ -32,6 +32,7 @@ customBtn.addEventListener('input', ()=>{
 })
 
 
+
 tips.forEach(val =>{
     val.addEventListener('click', (event)=>{
         tips.forEach(val =>{
